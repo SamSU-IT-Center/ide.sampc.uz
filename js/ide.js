@@ -339,6 +339,30 @@ function getLanguage() {
                 value:71,
                 mode: 'python'
             }
+        },
+        "basic.net" : {
+            "5.0.201": {
+                value: 1021,
+                mode: "csharp"
+            }
+        },
+        "fsharp.net" : {
+            "5.0.201": {
+                value: 1021,
+                mode: "csharp"
+            }
+        },
+        "csharp.net" : {
+            "5.0.201": {
+                value: 1022,
+                mode: "csharp"
+            }
+        },
+        "fsi" : {
+            "5.0.201": {
+                value: 1022,
+                mode: "csharp"
+            }
         }
       }
       
