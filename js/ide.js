@@ -117,6 +117,7 @@ function handleResult(data) {
 
     const status = 200;
     const stdout = (data.run.stdout);
+    const stderr = (data.run.stderr);
     const compile_output = (data.run.output);
     const time = (data.runTime === null ? "-" : data.runTime + "s");
     const memory = (data.memoryUsage === null ? "-" : data.run.memoryUsage + "KB");
@@ -132,7 +133,7 @@ function handleResult(data) {
         }, 3000);
     }
 
-    const output = [compile_output, stdout].join("\n").trim();
+    const output = [compile_output,stderr].join("\n").trim();
 
     stdoutEditor.setValue(output);
 
